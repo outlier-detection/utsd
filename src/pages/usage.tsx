@@ -98,7 +98,7 @@ export default function About() {
     <Container>
       <ParagraphLarge>
         The simplest way to get started is to{" "}
-        <StyleLink href={"https://download.com"} text={"download the entire UTSD collection."} />; optionally, you can
+        <StyleLink href={"/data/zips/UTSD.zip"} text={"download the entire UTSD collection."} />; optionally, you can
         download individual tasks by{" "}
         <StyleLink href={"/"} text={"selecting the task in the overview table and clicking download"} />. The data for
         each task is provided in multiple CSV files. There is one file containing all datapoints considered normal and
