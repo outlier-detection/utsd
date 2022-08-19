@@ -1,4 +1,4 @@
-export {}
+export {};
 // Not used (performance bad for a moderate number of series)
 // import { LineCanvas } from "@nivo/line";
 // import useWindowDimensions from "../hooks/useWindowDimensions";

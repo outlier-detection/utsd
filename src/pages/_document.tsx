@@ -1,11 +1,12 @@
 import * as React from "react";
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import { Provider as StyletronProvider } from "styletron-react";
-import { Server, Sheet } from "styletron-engine-atomic";
+import { Server } from "styletron-engine-atomic";
 import { DocumentInitialProps } from "next/dist/shared/lib/utils";
 import { styletron } from "../helpers/styletron";
+import { sheetT } from "styletron-engine-atomic/lib/server/server";
 
-type ExtendedDocumentProps = DocumentInitialProps & { stylesheets: Sheet[] };
+type ExtendedDocumentProps = DocumentInitialProps & { stylesheets: sheetT[] };
 
 class MyDocument extends Document<ExtendedDocumentProps> {
   static override async getInitialProps(ctx: DocumentContext): Promise<ExtendedDocumentProps> {
