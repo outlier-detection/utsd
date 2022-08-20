@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const next_config = {
   reactStrictMode: true,
+  basePath: "/utsd"
 };
 
 const withBundleAnalyzer = require("@next/bundle-analyzer")({

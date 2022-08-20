@@ -2,7 +2,8 @@ import { MaybeAsync } from "purify-ts/MaybeAsync";
 import { z } from "zod";
 import axios from "axios";
 
-const baseURL = process.env.NODE_ENV === "production" ? "http://localhost:3000" : "http://localhost:3000";
+const baseURL =
+  process.env.NODE_ENV === "production" ? "https://outlier-detection.github.io/utsd/" : "http://localhost:3000";
 
 // corresponds to nivo line serie
 const zSerie = z.object({
