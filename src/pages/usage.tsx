@@ -2,6 +2,15 @@ import * as React from "react";
 import { ParagraphLarge } from "baseui/typography";
 import StyleLink from "../components/styleLink";
 import Container from "../components/container";
+import * as R from "remeda";
+
+function download_archive() {
+  const start_index = 1;
+  const end_index = 7;
+  R.range(start_index, end_index + 1).forEach(i => {
+    window.open(`/data/full/UTSD.zip.00${i}`, "_blank");
+  });
+}
 
 const pythonCode = `
 from sklearn.model_selection import RepeatedStratifiedKFold
@@ -97,9 +106,9 @@ export default function About() {
   return (
     <Container>
       <ParagraphLarge>
-        The simplest way to get started is to{" "}
-        <StyleLink href={"/data/zips/UTSD.zip"} text={"download the entire UTSD collection."} />; optionally, you can
-        download individual tasks by{" "}
+        The simplest way to get started is to
+        <StyleLink href={"#"} text={"download the entire UTSD collection."} onClick={download_archive} />; optionally,
+        you can download individual tasks by{" "}
         <StyleLink href={"/"} text={"selecting the task in the overview table and clicking download"} />. The data for
         each task is provided in multiple CSV files. There is one file containing all datapoints considered normal and
         ten files containing randomly sampled outliers. The files are named{" "}
