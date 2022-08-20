@@ -27,8 +27,15 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on Github Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+next build
+next export
+touch out/.nojekyll
+git add out
+git commit -m \”Deploy gh-pages\”
+git subtree push — prefix out origin gh-pages”
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Note that the max [file size on Github is 100MB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) and the [max size of a single push is 2GB](https://stackoverflow.com/questions/38768454/repository-size-limits-for-github-com), it might thus be necessary to split large files in the out folder and use multiple pushes.
