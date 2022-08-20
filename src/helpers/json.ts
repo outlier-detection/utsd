@@ -3,7 +3,7 @@ import { z } from "zod";
 import axios from "axios";
 
 const baseURL =
-  process.env.NODE_ENV === "production" ? "https://outlier-detection.github.io/utsd/" : "http://localhost:3000";
+  process.env.NODE_ENV === "production" ? "https://outlier-detection.github.io/utsd/" : "http://localhost:3000/utsd/";
 
 // corresponds to nivo line serie
 const zSerie = z.object({

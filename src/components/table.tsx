@@ -85,7 +85,7 @@ export default function Table(props: TableProps) {
       label: "Download",
       onClick: ({ selection, clearSelection }: { selection: DatasetRow[]; clearSelection: () => void }) => {
         R.forEach(selection, row => {
-          window.open(`/data/zips/${row.id}.zip`, "_blank");
+          window.open(`/utsd/data/zips/${row.id}.zip`, "_blank");
         });
         clearSelection();
       },

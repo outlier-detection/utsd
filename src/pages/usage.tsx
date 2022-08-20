@@ -8,7 +8,7 @@ function download_archive() {
   const start_index = 1;
   const end_index = 7;
   R.range(start_index, end_index + 1).forEach(i => {
-    window.open(`/data/full/UTSD.zip.00${i}`, "_blank");
+    window.open(`/utsd/data/full/UTSD.zip.00${i}`, "_blank");
   });
 }
 
@@ -106,8 +106,8 @@ export default function About() {
   return (
     <Container>
       <ParagraphLarge>
-        The simplest way to get started is to
-        <StyleLink href={"#"} text={"download the entire UTSD collection."} onClick={download_archive} />; optionally,
+        The simplest way to get started is to&nbsp;
+        <StyleLink href={"#"} text={"download the entire UTSD collection"} onClick={download_archive} />. Optionally,
         you can download individual tasks by{" "}
         <StyleLink href={"/"} text={"selecting the task in the overview table and clicking download"} />. The data for
         each task is provided in multiple CSV files. There is one file containing all datapoints considered normal and
