@@ -106,12 +106,12 @@ export default function About() {
   return (
     <Container>
       <ParagraphLarge>
-        The simplest way to get started is to&nbsp;
-        <StyleLink href={"#"} text={"download the entire UTSD collection"} onClick={download_archive} />. Optionally,
-        you can download individual tasks by{" "}
-        <StyleLink href={"/"} text={"selecting the task in the overview table and clicking download"} />. The data for
-        each task is provided in multiple CSV files. There is one file containing all datapoints considered normal and
-        ten files containing randomly sampled outliers. The files are named{" "}
+        The simplest way to get started is to{" "}
+        <StyleLink href={"#"} text={"download the entire UTSD collection"} onClick={download_archive} /> (the download
+        is split into seven files, make sure to allow pop-ups for this site). Optionally, you can download individual
+        tasks by <StyleLink href={"/"} text={"selecting the task in the overview table and clicking download"} />. The
+        data for each task is provided in multiple CSV files. There is one file containing all datapoints considered
+        normal and ten files containing randomly sampled outliers. The files are named{" "}
         <i>$(DATASET)_$(CLASSES)_$(FRACTION)_$(VARIANT).csv</i>, for example, <i>Crop_1_0.1_1.csv</i> would describe the
         first randomly sampled variant of the &apos;Crop&apos; dataset with with 10% outliers and one normal class.
       </ParagraphLarge>
