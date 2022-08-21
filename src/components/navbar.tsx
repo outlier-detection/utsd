@@ -3,6 +3,7 @@ import * as React from "react";
 import { useRouter } from "next/router";
 import slugify from "../helpers/slugify";
 import { Route, ROUTES } from "../helpers/router";
+import { identity } from "remeda";
 
 type NavbarProps = {
   currentRoute: Route;
@@ -24,16 +25,17 @@ export default function Navbar({ currentRoute }: NavbarProps) {
     <AppNavBar
       title="Unusual Time Series Detection"
       mainItems={navItemsActive}
-      onMainItemSelect={item => routeTo(item)}
       username="Version"
       userItems={[{ label: "Version 1" }]}
       overrides={{
         AppName: {
-          style: ({ $theme }) => ({
+          style: () => ({
             minWidth: "35vw",
           }),
         },
       }}
+      onMainItemSelect={item => routeTo(item)}
+      onUserItemSelect={identity}
     />
   );
 }
