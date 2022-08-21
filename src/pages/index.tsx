@@ -88,7 +88,7 @@ export default function Index() {
           </FlexGrid>
         </FlexGridItem>
       </FlexGrid>
-      <Block height="100%" marginTop={["initial", "initial", "-65px"]}>
+      <Block height="100%" marginTop={["initial", "initial", "-65px"]} overflow={"auto"}>
         {loading ? (
           <Skeleton
             height="calc(100vh - 200px)"

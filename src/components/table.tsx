@@ -12,6 +12,9 @@ import { ChevronRight } from "baseui/icon";
 import { Button, SIZE } from "baseui/button";
 import { useRouter } from "next/router";
 import * as R from "remeda";
+import { Block } from "baseui/block";
+import { useStyletron } from "baseui";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 function reduceCounts(counts: number[], normalClasses: number, outlierFraction: number) {
   const add = (a: number, b: number) => a + b;
@@ -74,6 +77,8 @@ interface DatasetRow {
 }
 
 export default function Table(props: TableProps) {
+  const [_, theme] = useStyletron();
+  const { width } = useWindowDimensions();
   const initialRows: DatasetRow[] = props.data
     .filter(filterUnavailableTasks(props.normalClasses, props.outlierFraction))
     .map(datasetToRow);
@@ -109,11 +114,16 @@ export default function Table(props: TableProps) {
   ];
 
   return (
-    <StatefulDataTable
-      columns={columns}
-      rows={initialRows}
-      batchActions={batchActions as BatchAction[]}
-      rowActions={rowActions as RowAction[]}
-    />
+    <Block minWidth={`${theme.breakpoints.medium}px`} height="100%">
+      <StatefulDataTable
+        columns={columns}
+        rows={initialRows}
+        batchActions={batchActions as BatchAction[]}
+        rowActions={rowActions as RowAction[]}
+        resizableColumnWidths={false}
+        filterable={width > theme.breakpoints.medium}
+        searchable={width > theme.breakpoints.medium}
+      />
+    </Block>
   );
 }
