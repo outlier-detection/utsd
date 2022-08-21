@@ -6,7 +6,7 @@ import { Option, Select, SIZE } from "baseui/select";
 import { FormControl } from "baseui/form-control";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { Maybe, Nothing } from "purify-ts";
+import { Maybe } from "purify-ts";
 import * as R from "remeda";
 
 import { DatasetMeta, loadDatasetMeta } from "../helpers/json";
