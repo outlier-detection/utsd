@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 
 import { Block, BlockProps } from "baseui/block";
-import { BaseProvider } from "baseui";
+import { BaseProvider, styled } from "baseui";
 import { Provider as StyletronProvider } from "styletron-react";
 
 import useMediaQuery from "../hooks/useMediaQuery";
@@ -14,7 +14,6 @@ import Navbar from "../components/navbar";
 import { ROUTES, Route } from "../helpers/router";
 import Container from "../components/container";
 import { ParagraphXSmall } from "baseui/typography";
-import { StyledLink } from "baseui/link";
 import StyleLink from "../components/styleLink";
 
 const blockProps: BlockProps = {
@@ -37,6 +36,12 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const currentRoute = getCurrentRoute(router.pathname);
 
+  const FooterParagraph = styled(ParagraphXSmall, ({ $theme }) => ({
+    [$theme.mediaQuery.medium]: {
+      textAlign: "right",
+    },
+  }));
+
   return (
     <StyletronProvider value={styletron}>
       <BaseProvider theme={theme}>
@@ -46,12 +51,12 @@ export default function App({ Component, pageProps }: AppProps) {
         </Block>
         <Container>
           <hr />
-          <ParagraphXSmall style={{ textAlign: "right" }}>
+          <FooterParagraph>
             Learn more about UTSD in{" "}
             <StyleLink href={"https://dl.acm.org/doi/abs/10.1007/978-3-031-12670-3_14"} text={"our paper"} />, or
             contribute to the project on{" "}
             <StyleLink href={"https://github.com/outlier-detection/utsd/"} text={"Github"} />.
-          </ParagraphXSmall>
+          </FooterParagraph>
         </Container>
       </BaseProvider>
     </StyletronProvider>
