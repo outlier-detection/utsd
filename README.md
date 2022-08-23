@@ -28,10 +28,23 @@ https://doi.org/10.1007/978-3-031-12670-3_14.
 }
 ```
 
-### Deploy the website on Github Pages
+### Clone the repository from GitHub
+
+Because we host a lot of datasets on the `gh-pages` branch, you might want to individually clone the branches of this repository.
 
 ```bash
-git checkout gh-pages
+# first clone the code repository into ./utsd
+git clone https://github.com/outlier-detection/utsd --branch main --single-branch utsd
+
+# next clone the data repository into ./utsd/out
+git clone https://github.com/outlier-detection/utsd --branch gh-pages --single-branch utsd/out
+```
+
+This setup allows you to more easily deploy the website on GitHub pages using the commands below.
+
+### Deploy the website on GitHub Pages
+
+```bash
 next build
 next export
 touch out/.nojekyll
@@ -40,4 +53,4 @@ git commit -m 'Deploy gh-pages'
 git subtree push --prefix out origin gh-pages
 ```
 
-Note that the max [file size on Github is 100MB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) and the [max size of a single push is 2GB](https://stackoverflow.com/questions/38768454/repository-size-limits-for-github-com), it might thus be necessary to split large files in the out folder and use multiple pushes.
+Note that the max [file size on GitHub is 100MB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) and the [max size of a single push is 2GB](https://stackoverflow.com/questions/38768454/repository-size-limits-for-github-com), it might thus be necessary to split large files in the out folder and use multiple pushes.
