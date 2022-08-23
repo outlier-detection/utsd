@@ -12,7 +12,7 @@
     "analyze": "cross-env ANALYZE=true BUNDLE_ANALYZE=both next build",
     "analyze:server": "cross-env ANALYZE=true BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env ANALYZE=true  BUNDLE_ANALYZE=browser next build",
-    "deploy": "git checkout gh-pages && next build && next export && touch out/.nojekyll && git add out/ -f && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "next build && next export && touch out/.nojekyll && git add out/ -f && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "lint-staged": {
     "src/**/*": [
