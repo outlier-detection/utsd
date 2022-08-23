@@ -35,7 +35,7 @@ const PlotlyLine = (props: LineProps) => {
       data={rawDataToPlotly(data)}
       layout={{
         width: width > 970 ? (width > 1680 ? 1280 : width / 1.5) : width - 36,
-        height: height - 225,
+        height: height - 150,
         xaxis: { showgrid: false, tickfont: { size: 10 } },
         yaxis: { showgrid: true, tickfont: { size: 10 } },
         margin: { l: 40, r: 0, t: 0, b: 15 },
