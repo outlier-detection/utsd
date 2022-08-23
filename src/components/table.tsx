@@ -114,7 +114,7 @@ export default function Table(props: TableProps) {
   ];
 
   return (
-    <Block minWidth={`${theme.breakpoints.medium}px`} height="100%">
+    <Block minWidth={`${theme.breakpoints.medium}px`} overflow="hidden" height="100%">
       <StatefulDataTable
         columns={columns}
         rows={initialRows}
