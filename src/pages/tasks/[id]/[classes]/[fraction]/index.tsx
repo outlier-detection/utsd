@@ -117,8 +117,12 @@ export default function Tasks() {
       </Block>
       <ResponsiveGrid>
         {SideNav}
-        <FlexGridItem marginTop={["0", "0", "-52px"]}>
-          {/*<Line dataset={dataset}/>*/}
+        <FlexGridItem marginTop={["0", "0", "-52px"]} minHeight={"calc(100vh - 150px)"} position="relative">
+          <FlexGridItem position="absolute" top="calc(50% - 64px)">
+            <ParagraphSmall color="gray" style={{ textAlign: "center" }}>
+              Preparing plot...
+            </ParagraphSmall>
+          </FlexGridItem>
           <PlotlyLine dataset={dataset} />
         </FlexGridItem>
       </ResponsiveGrid>
@@ -132,10 +136,10 @@ export default function Tasks() {
       </Block>
       <ResponsiveGrid>
         <FlexGridItem maxWidth={responsiveSideNavWidth}>
-          <Skeleton animation height="calc(100vh - 225px)" />
+          <Skeleton animation height="calc(100vh - 150px)" />
         </FlexGridItem>
         <FlexGridItem>
-          <Skeleton animation height="calc(100vh - 225px)" />
+          <Skeleton animation height="calc(100vh - 150px)" />
         </FlexGridItem>
       </ResponsiveGrid>
     </React.Fragment>
