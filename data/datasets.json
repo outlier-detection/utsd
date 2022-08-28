@@ -1,0 +1,346 @@
+[
+  { "length": 1460, "benchmark": "none", "dataset": "ACSF1", "counts": [20, 20, 20, 20, 20, 20, 20, 20, 20, 20] },
+  {
+    "length": 176,
+    "benchmark": "none",
+    "dataset": "Adiac",
+    "counts": [
+      29, 26, 26, 25, 25, 23, 23, 22, 21, 21, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
+      20, 20, 20, 20, 20, 20, 20, 20, 20
+    ]
+  },
+  {
+    "length": 500,
+    "benchmark": "none",
+    "dataset": "AllGestureWiimoteX",
+    "counts": [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+  },
+  {
+    "length": 500,
+    "benchmark": "none",
+    "dataset": "AllGestureWiimoteY",
+    "counts": [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+  },
+  {
+    "length": 500,
+    "benchmark": "none",
+    "dataset": "AllGestureWiimoteZ",
+    "counts": [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+  },
+  { "length": 251, "benchmark": "none", "dataset": "ArrowHead", "counts": [81, 65, 65] },
+  { "length": 128, "benchmark": "none", "dataset": "BME", "counts": [60, 60, 60] },
+  { "length": 470, "benchmark": "none", "dataset": "Beef", "counts": [12, 12, 12, 12, 12] },
+  { "length": 512, "benchmark": "none", "dataset": "BeetleFly", "counts": [20, 20] },
+  { "length": 512, "benchmark": "none", "dataset": "BirdChicken", "counts": [20, 20] },
+  { "length": 128, "benchmark": "none", "dataset": "CBF", "counts": [310, 310, 310] },
+  { "length": 577, "benchmark": "none", "dataset": "Car", "counts": [30, 30, 30, 30] },
+  { "length": 24, "benchmark": "none", "dataset": "Chinatown", "counts": [259, 104] },
+  { "length": 166, "benchmark": "none", "dataset": "ChlorineConcentration", "counts": [2307, 1000, 1000] },
+  { "length": 1639, "benchmark": "both", "dataset": "CinCECGTorso", "counts": [355, 355, 355, 355] },
+  { "length": 286, "benchmark": "none", "dataset": "Coffee", "counts": [29, 27] },
+  { "length": 720, "benchmark": "none", "dataset": "Computers", "counts": [250, 250] },
+  {
+    "length": 300,
+    "benchmark": "none",
+    "dataset": "CricketX",
+    "counts": [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65]
+  },
+  {
+    "length": 300,
+    "benchmark": "none",
+    "dataset": "CricketY",
+    "counts": [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65]
+  },
+  {
+    "length": 300,
+    "benchmark": "none",
+    "dataset": "CricketZ",
+    "counts": [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65]
+  },
+  {
+    "length": 46,
+    "benchmark": "both",
+    "dataset": "Crop",
+    "counts": [
+      1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000,
+      1000, 1000, 1000, 1000, 1000
+    ]
+  },
+  { "length": 345, "benchmark": "none", "dataset": "DiatomSizeReduction", "counts": [99, 98, 91, 34] },
+  { "length": 80, "benchmark": "none", "dataset": "DistalPhalanxOutlineAgeGroup", "counts": [322, 172, 45] },
+  { "length": 80, "benchmark": "none", "dataset": "DistalPhalanxOutlineCorrect", "counts": [539, 337] },
+  { "length": 80, "benchmark": "none", "dataset": "DistalPhalanxTW", "counts": [255, 121, 47, 47, 43, 26] },
+  { "length": 288, "benchmark": "none", "dataset": "DodgerLoopDay", "counts": [23, 23, 21, 20, 20, 19, 18] },
+  { "length": 288, "benchmark": "none", "dataset": "DodgerLoopGame", "counts": [74, 70] },
+  { "length": 288, "benchmark": "none", "dataset": "DodgerLoopWeekend", "counts": [100, 44] },
+  { "length": 96, "benchmark": "none", "dataset": "ECG200", "counts": [133, 67] },
+  { "length": 140, "benchmark": "single", "dataset": "ECG5000", "counts": [2919, 1767, 194, 96, 24] },
+  { "length": 136, "benchmark": "single", "dataset": "ECGFiveDays", "counts": [442, 442] },
+  {
+    "length": 1250,
+    "benchmark": "none",
+    "dataset": "EOGHorizontalSignal",
+    "counts": [61, 61, 61, 61, 61, 60, 60, 60, 60, 60, 60, 59]
+  },
+  {
+    "length": 1250,
+    "benchmark": "none",
+    "dataset": "EOGVerticalSignal",
+    "counts": [61, 61, 61, 61, 61, 60, 60, 60, 60, 60, 60, 59]
+  },
+  { "length": 512, "benchmark": "single", "dataset": "Earthquakes", "counts": [368, 93] },
+  {
+    "length": 96,
+    "benchmark": "both",
+    "dataset": "ElectricDevices",
+    "counts": [4275, 4187, 2639, 1606, 1394, 1284, 1252]
+  },
+  { "length": 1751, "benchmark": "multi", "dataset": "EthanolLevel", "counts": [252, 252, 250, 250] },
+  {
+    "length": 131,
+    "benchmark": "both",
+    "dataset": "FaceAll",
+    "counts": [327, 273, 187, 178, 176, 176, 171, 149, 140, 135, 112, 106, 72, 48]
+  },
+  { "length": 350, "benchmark": "none", "dataset": "FaceFour", "counts": [34, 29, 27, 22] },
+  {
+    "length": 131,
+    "benchmark": "none",
+    "dataset": "FacesUCR",
+    "counts": [327, 273, 187, 178, 176, 176, 171, 149, 140, 135, 112, 106, 72, 48]
+  },
+  {
+    "length": 270,
+    "benchmark": "multi",
+    "dataset": "FiftyWords",
+    "counts": [
+      109, 91, 61, 54, 38, 34, 32, 24, 24, 22, 22, 22, 21, 18, 16, 14, 14, 13, 13, 13, 12, 11, 10, 10, 10, 10, 10, 9, 9,
+      9, 9, 9, 8, 8, 8, 8, 8, 8, 8, 8, 7, 7, 7, 7, 7, 7, 7, 7, 6, 6
+    ]
+  },
+  { "length": 463, "benchmark": "none", "dataset": "Fish", "counts": [50, 50, 50, 50, 50, 50, 50] },
+  { "length": 500, "benchmark": "single", "dataset": "FordA", "counts": [2527, 2394] },
+  { "length": 500, "benchmark": "single", "dataset": "FordB", "counts": [2261, 2185] },
+  { "length": 301, "benchmark": "single", "dataset": "FreezerRegularTrain", "counts": [1500, 1500] },
+  { "length": 301, "benchmark": "none", "dataset": "FreezerSmallTrain", "counts": [1439, 1439] },
+  {
+    "length": 201,
+    "benchmark": "none",
+    "dataset": "Fungi",
+    "counts": [20, 20, 16, 16, 12, 12, 12, 12, 12, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+  },
+  {
+    "length": 360,
+    "benchmark": "none",
+    "dataset": "GestureMidAirD1",
+    "counts": [13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13]
+  },
+  {
+    "length": 360,
+    "benchmark": "none",
+    "dataset": "GestureMidAirD2",
+    "counts": [13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13]
+  },
+  {
+    "length": 360,
+    "benchmark": "none",
+    "dataset": "GestureMidAirD3",
+    "counts": [13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13]
+  },
+  { "length": 455, "benchmark": "none", "dataset": "GesturePebbleZ1", "counts": [54, 53, 52, 51, 49, 45] },
+  { "length": 455, "benchmark": "none", "dataset": "GesturePebbleZ2", "counts": [54, 53, 52, 51, 49, 45] },
+  { "length": 150, "benchmark": "none", "dataset": "GunPoint", "counts": [100, 100] },
+  { "length": 150, "benchmark": "none", "dataset": "GunPointAgeSpan", "counts": [228, 223] },
+  { "length": 150, "benchmark": "none", "dataset": "GunPointMaleVersusFemale", "counts": [237, 214] },
+  { "length": 150, "benchmark": "none", "dataset": "GunPointOldVersusYoung", "counts": [236, 215] },
+  { "length": 431, "benchmark": "none", "dataset": "Ham", "counts": [111, 103] },
+  { "length": 2709, "benchmark": "single", "dataset": "HandOutlines", "counts": [875, 495] },
+  { "length": 1092, "benchmark": "multi", "dataset": "Haptics", "counts": [100, 100, 93, 92, 78] },
+  { "length": 512, "benchmark": "none", "dataset": "Herring", "counts": [77, 51] },
+  { "length": 2000, "benchmark": "none", "dataset": "HouseTwenty", "counts": [89, 70] },
+  { "length": 1882, "benchmark": "multi", "dataset": "InlineSkate", "counts": [117, 108, 103, 100, 98, 62, 62] },
+  { "length": 601, "benchmark": "none", "dataset": "InsectEPGRegularTrain", "counts": [148, 111, 52] },
+  { "length": 601, "benchmark": "none", "dataset": "InsectEPGSmallTrain", "counts": [126, 95, 45] },
+  {
+    "length": 256,
+    "benchmark": "multi",
+    "dataset": "InsectWingbeatSound",
+    "counts": [200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200]
+  },
+  { "length": 24, "benchmark": "single", "dataset": "ItalyPowerDemand", "counts": [547, 549] },
+  { "length": 720, "benchmark": "none", "dataset": "LargeKitchenAppliances", "counts": [250, 250, 250] },
+  { "length": 637, "benchmark": "none", "dataset": "Lightning2", "counts": [73, 48] },
+  { "length": 319, "benchmark": "none", "dataset": "Lightning7", "counts": [38, 22, 19, 18, 17, 15, 14] },
+  { "length": 1024, "benchmark": "none", "dataset": "Mallat", "counts": [300, 300, 300, 300, 300, 300, 300, 300] },
+  { "length": 448, "benchmark": "none", "dataset": "Meat", "counts": [40, 40, 40] },
+  {
+    "length": 99,
+    "benchmark": "both",
+    "dataset": "MedicalImages",
+    "counts": [594, 112, 106, 75, 65, 49, 48, 45, 24, 23]
+  },
+  {
+    "length": 24,
+    "benchmark": "none",
+    "dataset": "MelbournePedestrian",
+    "counts": [363, 363, 363, 363, 363, 359, 356, 339, 300, 288]
+  },
+  { "length": 80, "benchmark": "none", "dataset": "MiddlePhalanxOutlineAgeGroup", "counts": [266, 196, 92] },
+  { "length": 80, "benchmark": "none", "dataset": "MiddlePhalanxOutlineCorrect", "counts": [554, 337] },
+  { "length": 80, "benchmark": "none", "dataset": "MiddlePhalanxTW", "counts": [202, 128, 82, 66, 41, 34] },
+  { "length": 1024, "benchmark": "both", "dataset": "MixedShapesRegularTrain", "counts": [754, 681, 558, 518, 414] },
+  { "length": 1024, "benchmark": "none", "dataset": "MixedShapesSmallTrain", "counts": [674, 601, 478, 438, 334] },
+  { "length": 84, "benchmark": "single", "dataset": "MoteStrain", "counts": [685, 587] },
+  {
+    "length": 750,
+    "benchmark": "none",
+    "dataset": "NonInvasiveFetalECGThorax1",
+    "counts": [
+      98, 97, 96, 96, 95, 94, 94, 94, 94, 93, 93, 93, 92, 91, 91, 91, 91, 91, 91, 90, 90, 90, 90, 90, 89, 89, 89, 88,
+      88, 87, 87, 87, 87, 86, 86, 85, 85, 85, 85, 84, 78, 75
+    ]
+  },
+  {
+    "length": 750,
+    "benchmark": "none",
+    "dataset": "NonInvasiveFetalECGThorax2",
+    "counts": [
+      98, 97, 96, 96, 95, 94, 94, 94, 94, 93, 93, 93, 92, 91, 91, 91, 91, 91, 91, 90, 90, 90, 90, 90, 89, 89, 89, 88,
+      88, 87, 87, 87, 87, 86, 86, 85, 85, 85, 85, 84, 78, 75
+    ]
+  },
+  { "length": 427, "benchmark": "none", "dataset": "OSULeaf", "counts": [97, 84, 82, 75, 66, 38] },
+  { "length": 570, "benchmark": "none", "dataset": "OliveOil", "counts": [25, 17, 10, 8] },
+  {
+    "length": 1345,
+    "benchmark": "none",
+    "dataset": "PLAID",
+    "counts": [175, 172, 156, 139, 115, 114, 66, 38, 38, 35, 26]
+  },
+  { "length": 80, "benchmark": "single", "dataset": "PhalangesOutlinesCorrect", "counts": [1698, 960] },
+  {
+    "length": 1024,
+    "benchmark": "multi",
+    "dataset": "Phoneme",
+    "counts": [
+      238, 149, 145, 125, 123, 113, 109, 100, 83, 78, 71, 68, 66, 64, 54, 47, 42, 41, 38, 33, 32, 28, 28, 26, 26, 24,
+      23, 22, 20, 18, 17, 14, 12, 9, 9, 6, 4, 3, 2
+    ]
+  },
+  {
+    "length": 361,
+    "benchmark": "none",
+    "dataset": "PickupGestureWiimoteZ",
+    "counts": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+  },
+  {
+    "length": 2000,
+    "benchmark": "none",
+    "dataset": "PigAirwayPressure",
+    "counts": [
+      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
+      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+    ]
+  },
+  {
+    "length": 2000,
+    "benchmark": "none",
+    "dataset": "PigArtPressure",
+    "counts": [
+      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
+      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+    ]
+  },
+  {
+    "length": 2000,
+    "benchmark": "none",
+    "dataset": "PigCVP",
+    "counts": [
+      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
+      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+    ]
+  },
+  { "length": 144, "benchmark": "none", "dataset": "Plane", "counts": [30, 30, 30, 30, 30, 30, 30] },
+  { "length": 144, "benchmark": "none", "dataset": "PowerCons", "counts": [180, 180] },
+  { "length": 80, "benchmark": "none", "dataset": "ProximalPhalanxOutlineAgeGroup", "counts": [289, 227, 89] },
+  { "length": 80, "benchmark": "none", "dataset": "ProximalPhalanxOutlineCorrect", "counts": [605, 286] },
+  { "length": 80, "benchmark": "multi", "dataset": "ProximalPhalanxTW", "counts": [252, 176, 98, 31, 30, 18] },
+  { "length": 720, "benchmark": "none", "dataset": "RefrigerationDevices", "counts": [250, 250, 250] },
+  { "length": 2844, "benchmark": "none", "dataset": "Rock", "counts": [26, 19, 14, 11] },
+  { "length": 720, "benchmark": "none", "dataset": "ScreenType", "counts": [250, 250, 250] },
+  { "length": 1500, "benchmark": "single", "dataset": "SemgHandGenderCh2", "counts": [540, 360] },
+  { "length": 1500, "benchmark": "multi", "dataset": "SemgHandMovementCh2", "counts": [150, 150, 150, 150, 150, 150] },
+  { "length": 1500, "benchmark": "multi", "dataset": "SemgHandSubjectCh2", "counts": [180, 180, 180, 180, 180] },
+  {
+    "length": 385,
+    "benchmark": "none",
+    "dataset": "ShakeGestureWiimoteZ",
+    "counts": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+  },
+  { "length": 500, "benchmark": "none", "dataset": "ShapeletSim", "counts": [100, 100] },
+  {
+    "length": 512,
+    "benchmark": "none",
+    "dataset": "ShapesAll",
+    "counts": [
+      20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
+      20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
+      20, 20, 20, 20
+    ]
+  },
+  { "length": 720, "benchmark": "none", "dataset": "SmallKitchenAppliances", "counts": [250, 250, 250] },
+  { "length": 15, "benchmark": "none", "dataset": "SmoothSubspace", "counts": [100, 100, 100] },
+  { "length": 70, "benchmark": "none", "dataset": "SonyAIBORobotSurface1", "counts": [349, 272] },
+  { "length": 65, "benchmark": "single", "dataset": "SonyAIBORobotSurface2", "counts": [604, 376] },
+  { "length": 1024, "benchmark": "single", "dataset": "StarLightCurves", "counts": [5327, 2580, 1329] },
+  { "length": 235, "benchmark": "single", "dataset": "Strawberry", "counts": [351, 632] },
+  {
+    "length": 128,
+    "benchmark": "none",
+    "dataset": "SwedishLeaf",
+    "counts": [75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75]
+  },
+  { "length": 398, "benchmark": "multi", "dataset": "Symbols", "counts": [181, 181, 167, 167, 162, 162] },
+  { "length": 60, "benchmark": "none", "dataset": "SyntheticControl", "counts": [100, 100, 100, 100, 100, 100] },
+  { "length": 277, "benchmark": "none", "dataset": "ToeSegmentation1", "counts": [140, 128] },
+  { "length": 343, "benchmark": "none", "dataset": "ToeSegmentation2", "counts": [124, 42] },
+  { "length": 275, "benchmark": "none", "dataset": "Trace", "counts": [50, 50, 50, 50] },
+  { "length": 82, "benchmark": "single", "dataset": "TwoLeadECG", "counts": [581, 581] },
+  { "length": 128, "benchmark": "none", "dataset": "TwoPatterns", "counts": [1306, 1248, 1245, 1201] },
+  { "length": 150, "benchmark": "none", "dataset": "UMD", "counts": [60, 60, 60] },
+  {
+    "length": 945,
+    "benchmark": "both",
+    "dataset": "UWaveGestureLibraryAll",
+    "counts": [560, 560, 560, 560, 560, 560, 559, 559]
+  },
+  {
+    "length": 315,
+    "benchmark": "none",
+    "dataset": "UWaveGestureLibraryX",
+    "counts": [560, 560, 560, 560, 560, 560, 559, 559]
+  },
+  {
+    "length": 315,
+    "benchmark": "none",
+    "dataset": "UWaveGestureLibraryY",
+    "counts": [560, 560, 560, 560, 560, 560, 559, 559]
+  },
+  {
+    "length": 315,
+    "benchmark": "none",
+    "dataset": "UWaveGestureLibraryZ",
+    "counts": [560, 560, 560, 560, 560, 560, 559, 559]
+  },
+  { "length": 152, "benchmark": "single", "dataset": "Wafer", "counts": [6402, 762] },
+  { "length": 234, "benchmark": "none", "dataset": "Wine", "counts": [57, 54] },
+  {
+    "length": 270,
+    "benchmark": "multi",
+    "dataset": "WordSynonyms",
+    "counts": [200, 115, 72, 56, 46, 44, 39, 30, 27, 26, 23, 20, 20, 19, 18, 18, 16, 16, 16, 16, 14, 14, 14, 14, 12]
+  },
+  { "length": 900, "benchmark": "multi", "dataset": "Worms", "counts": [109, 45, 44, 35, 25] },
+  { "length": 900, "benchmark": "none", "dataset": "WormsTwoClass", "counts": [149, 109] },
+  { "length": 426, "benchmark": "single", "dataset": "Yoga", "counts": [1770, 1530] }
+]
