@@ -10,7 +10,7 @@ import { Maybe, Nothing } from "purify-ts";
 import * as R from "remeda";
 import { z } from "zod";
 
-import { Dataset, loadDataset, loadDatasetMeta } from "../../../../../helpers/json";
+import { Dataset, loadDataset, loadDatasetMetaLocal } from "../../../../../helpers/json";
 import { Navigation } from "baseui/side-navigation";
 import { Skeleton } from "baseui/skeleton";
 import Link from "next/link";
@@ -189,7 +189,7 @@ export async function getStaticPaths() {
   const percentages = PERCENT_OPTIONS.map(opt => opt.id);
   const paths: Array<{ params: ParamsT }> = [];
 
-  const datasets = await loadDatasetMeta().orDefault([]);
+  const datasets = await loadDatasetMetaLocal().orDefault([]);
   datasets.forEach(row => {
     classes.forEach(cls => {
       percentages.forEach(pct => {

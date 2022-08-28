@@ -53,3 +53,13 @@ export function loadDatasetMeta(): MaybeAsync<DatasetMeta[]> {
     return z.array(zDatasetMeta).parse(JSON.parse(unzipped_data));
   });
 }
+
+export function loadDatasetMetaLocal(): MaybeAsync<DatasetMeta[]> {
+  const fs = require("fs");
+
+  return MaybeAsync(async () => {
+    const data = fs.readFileSync("public/data/datasets.json.gz");
+    const unzipped_data = inflate(data, { to: "string" });
+    return z.array(zDatasetMeta).parse(JSON.parse(unzipped_data));
+  });
+}
