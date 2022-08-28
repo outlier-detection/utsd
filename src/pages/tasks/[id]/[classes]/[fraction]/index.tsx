@@ -10,12 +10,14 @@ import { Maybe, Nothing } from "purify-ts";
 import * as R from "remeda";
 import { z } from "zod";
 
-import { Dataset, loadDataset } from "../../../../../helpers/json";
+import { Dataset, loadDataset, loadDatasetMeta } from "../../../../../helpers/json";
 import { Navigation } from "baseui/side-navigation";
 import { Skeleton } from "baseui/skeleton";
 import Link from "next/link";
 import { StyledLink } from "baseui/link";
 import Container from "../../../../../components/container";
+import { CLASS_OPTIONS, PERCENT_OPTIONS } from "../../../../index";
+import { filterUnavailableTasks } from "../../../../../components/table";
 
 const PlotlyLine = dynamic(() => import("../../../../../components/line-plotly"), { ssr: false });
 const toVariantId = (id: number) => `#variant-${id}`;
@@ -178,4 +180,41 @@ export default function Tasks() {
       </Block>
     </React.Fragment>
   );
+}
+
+type ParamsT = { id: string; classes: string; fraction: string };
+
+export async function getStaticPaths() {
+  const classes = CLASS_OPTIONS.map(opt => opt.id);
+  const percentages = PERCENT_OPTIONS.map(opt => opt.id);
+  const paths: Array<{ params: ParamsT }> = [];
+
+  const datasets = await loadDatasetMeta().orDefault([]);
+  datasets.forEach(row => {
+    classes.forEach(cls => {
+      percentages.forEach(pct => {
+        const task_is_available = filterUnavailableTasks(cls, pct)(row);
+        if (task_is_available) {
+          paths.push({
+            params: {
+              id: row.dataset,
+              classes: cls.toString(),
+              fraction: pct.toString(),
+            },
+          });
+        }
+      });
+    });
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }: { params: ParamsT }) {
+  return {
+    props: params,
+  };
 }

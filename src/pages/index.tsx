@@ -19,13 +19,13 @@ interface OptionsT {
   label: string;
 }
 
-const CLASS_OPTIONS: OptionsT[] = [
+export const CLASS_OPTIONS: OptionsT[] = [
   { id: 1, label: "1" },
   { id: 2, label: "2" },
   { id: 3, label: "3" },
 ];
 
-const PERCENT_OPTIONS: OptionsT[] = [
+export const PERCENT_OPTIONS: OptionsT[] = [
   { id: 0.025, label: "2.5%" },
   { id: 0.05, label: "5.0%" },
   { id: 0.1, label: "10.0%" },

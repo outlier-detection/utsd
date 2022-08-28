@@ -26,6 +26,7 @@
     "axios": "^0.27.2",
     "baseui": "^12.0.0",
     "next": "12.2.5",
+    "pako": "^2.0.4",
     "plotly.js": "^2.14.0",
     "purify-ts": "^1.2.2",
     "react": "^18.2.0",
@@ -39,6 +40,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "^12.2.5",
     "@types/node": "18.7.6",
+    "@types/pako": "^2.0.0",
     "@types/plotly.js": "^2.12.2",
     "@types/react": "18.0.17",
     "@types/react-plotly.js": "^2.5.1",

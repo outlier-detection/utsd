@@ -64,7 +64,7 @@ interface TableProps {
   data: DatasetMeta[];
 }
 
-function filterUnavailableTasks(normalClasses: number, outlierFraction: number) {
+export function filterUnavailableTasks(normalClasses: number, outlierFraction: number) {
   return ({ counts }: DatasetMeta) => {
     const { outliers } = reduceCounts(counts, normalClasses, outlierFraction);
     return counts.length > normalClasses && outliers > 0;
@@ -90,7 +90,7 @@ export default function Table(props: TableProps) {
       label: "Download",
       onClick: ({ selection, clearSelection }: { selection: DatasetRow[]; clearSelection: () => void }) => {
         R.forEach(selection, row => {
-          window.open(`/utsd/data/zips/${row.id}.zip`, "_blank");
+          window.open(`/utsd/data/zips/${row.id}.7z`, "_blank");
         });
         clearSelection();
       },

@@ -1,9 +1,17 @@
 import { MaybeAsync } from "purify-ts/MaybeAsync";
 import { z } from "zod";
 import axios from "axios";
+import { ResponseType } from "axios";
+import { inflate } from "pako";
 
 const baseURL =
   process.env.NODE_ENV === "production" ? "https://outlier-detection.github.io/utsd/" : "http://localhost:3000/utsd/";
+
+const axiosConfig: { baseURL: string; responseType: ResponseType; decompress: boolean } = {
+  baseURL,
+  responseType: "arraybuffer",
+  decompress: false,
+};
 
 // corresponds to nivo line serie
 const zSerie = z.object({
@@ -32,14 +40,16 @@ export type DatasetMeta = z.infer<typeof zDatasetMeta>;
 
 export function loadDataset(name: string): MaybeAsync<Dataset> {
   return MaybeAsync(async () => {
-    const { data } = await axios.get(`/data/jsons/${name}.json`, { baseURL });
-    return zDataset.parse(data);
+    const { data } = await axios.get(`/data/gzs/${name}.json.gz`, axiosConfig);
+    const unzipped_data = inflate(data, { to: "string" });
+    return zDataset.parse(JSON.parse(unzipped_data));
   });
 }
 
 export function loadDatasetMeta(): MaybeAsync<DatasetMeta[]> {
   return MaybeAsync(async () => {
-    const { data } = await axios.get("/data/datasets.json", { baseURL });
-    return z.array(zDatasetMeta).parse(data);
+    const { data } = await axios.get("/data/datasets.json.gz", axiosConfig);
+    const unzipped_data = inflate(data, { to: "string" });
+    return z.array(zDatasetMeta).parse(JSON.parse(unzipped_data));
   });
 }
